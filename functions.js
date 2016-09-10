@@ -48,6 +48,12 @@ Function - youGetTaco
 Write a function that takes a single String parameter called action. If the value passed into our function is eat have the function return the String value EAT TACOS.
 */
 
+function youGetTaco(action) {
+  if (action === "eat"){
+    return "EAT TACOS";
+  }
+}
+console.log(youGetTaco("eat"));
 
 
 /*Function - isNumberGreaterThan
