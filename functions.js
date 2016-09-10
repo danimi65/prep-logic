@@ -59,6 +59,16 @@ console.log(youGetTaco("eat"));
 /*Function - isNumberGreaterThan
 Write a function that takes two variables of type Number called first and second respectively. Return true if the first number is greater than the second.*/
 
+function isNumberGreaterThan(first, second){
+  if (first > second){
+
+  return true; 
+  }
+  else {
+    return false;
+  }
+}
+console.log(isNumberGreaterThan(5, 3));
 
 
 /*Function - isTrue
