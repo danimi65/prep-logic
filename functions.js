@@ -74,21 +74,49 @@ console.log(isNumberGreaterThan(5, 3));
 /*Function - isTrue
 Write a function that takes in a Boolean value named val and have the function return whether the value is true.*/
 
-
-
+function isTrue(val){
+  if (val === "hungry"){
+    return true;
+  }
+}
+console.log(isTrue("hungry"));
 
 /*Function - isFalse
 Write a function that takes in a Boolean value named val and have the function return whether the value is false.*/
 
 
-
+function isFalse(val) {
+  if (val=== "full"){
+    return false;
+  }
+}
+console.log(isFalse("full"));
 
 /*Function - isEqual
 Write a function that takes two variables of type String called firstWord and secondWord respectively. Return 'AWWWWRIGHT' if the two are equal otherwise return 'Y U NO MATCH!'.*/
 
+function isEqual(firstWord,secondWord){
+  if (firstWord === secondWord){
+    return "AWWWWRIGHT";
+  } else {
+    return "Y U NO MATCH";
+  }
+
+}
+console.log(isEqual("yas", "yas"));
 
 /*Function - isNotEqual
 Write a function that takes two variables of type String called firstWord and secondWord respectively. Return 'AWWWWRIGHT' if the two are not equal otherwise return 'Y U MATCH!'.*/
+
+function isNotEqual(firstWord, secondWord){
+  if (firstWord !== secondWord){
+    return "AWWWWRIGHT";
+  } else{
+    return "Y U NO MATCH";
+  }
+
+}
+console.log(isNotEqual("dog", "dog"));
 
 
 /*Function - doubleEquals
