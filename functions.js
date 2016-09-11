@@ -122,7 +122,14 @@ console.log(isNotEqual("dog", "dog"));
 /*Function - doubleEquals
 Write a function that takes two variables of type Boolean called first and second respectively. Return true if both values are true otherwise return false.*/
 
-
+function doubleEquals(first, second){
+  if(first === "meow" && second === "woof"){
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(doubleEquals("woof", "woof"));
 
 /*Function - totalOver30
 Write a function that takes three variables of type Number called first and second and third respectively. Return true if the sum of all values are greater than 30 otherwise return false.*/
