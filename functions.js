@@ -188,6 +188,10 @@ function createArrayFromString(word){
   var newStuff = word.charAt(i);
   if (word[i] !== "a" && word[i] !== "A") {
     newMessage.push(newStuff);
+ 
+ // charAt method returns the character at the specified index in a string
+ // push() method returns the character at the specified index in a string
+ 
   }
 }
 return newMessage;
@@ -199,8 +203,13 @@ console.log(createArrayFromString(message));
 /*Function - greatSummator
 Write a function that takes an Array with any number of type Number and write a for loop to add all numbers in the Array and return the sum.*/
 
+var numberz = [ 1, 2, 3, 4, 5, 6, 7];
 
+function greatSummator(number){
 
+for (var i = 0; i < numberz.length; i++);
+}
+return 
 
 /*Function - totalUnderWhatFor
 Write a function that takes an Array with any number of type Number and second variable called total. Return true if the sum of all values in the Array are less than total otherwise return false.*/
