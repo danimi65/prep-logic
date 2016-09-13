@@ -156,15 +156,43 @@ console.log(totalUnderWhat(10, 18, 20, 120));
 /*Function - looptoNumber
 Write a function that takes in a Number value named limit and have the function write a for loop that loops the number of times of limit and console.log each number as the loop executes.*/
 
-
+function looptoNumber (limit){
+  for (var i = 0; i < limit; i++){
+    console.log(i);
+  }
+}
+looptoNumber(8);
 
 /*Function - showEachValue
 Write a function that takes in a Array value named characters that has a sequence of single character String values and have the function write a for loop that loops for each number of elements in the Array and console.log each character as the loop executes.*/
 
+var characters = ["Minnie Mouse", "Harry Potter", "Totoro", "Donald Duck", "Kiki"];
+
+function showEachValue(characterNames){
+  for (var i = 0; i < characters; i++){
+    var currentCharacterName = character[i];
+    checkCharacterName(currentCharacterName);
+  }
+}
+console.log(characters);
 
 
 /*Function - createArrayFromString
-Write a function that takes a single variable of type String called word and write a for loop that creates an Array made up of each character in word except for "A" or "a". We don't want no stinking "A" or "a" in our Array. Note: You will need to use the Array.push() method to complete this function.*/
+Write a function that takes a single variable of type String called word and write a for loop that creates an Array made up of each character in word except for "A" or "a". We don't want no stinking "A" or "a" in our Array. Note: You will need to use the Array.push() method to complete this function. */
+
+var message = "Apple Jacks are awesome";
+
+function createArrayFromString(word){
+  var newMessage = [];
+  for (var i = 0; i < message.length; i++){
+  var newStuff = word.charAt(i);
+  if (word[i] !== "a" && word[i] !== "A") {
+    newMessage.push(newStuff);
+  }
+}
+return newMessage;
+}
+console.log(createArrayFromString(message));
 
 
 
